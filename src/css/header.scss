@@ -1,0 +1,138 @@
+.header{
+  padding: 53px 0 9px;
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    &-list{
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+    }
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+  &__link{
+    @include text ($miseo400dm,16px,16px,white);
+    transition: .5s;
+    &:hover{
+      color: #8DFD1B;
+      transition: .5s;
+      text-decoration: underline;
+    }
+    &-reg{
+      cursor: pointer;
+    }
+    &-up{
+      cursor: pointer;
+    }
+  }
+}
+.white-btn{
+  background: #8DFD1B;
+  border: 1px solid #8DFD1B;
+  @include text ($miseo400dm,16px,16px,black);
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 1s;
+  &:hover{
+    color: black;
+    background: white;
+    border: 1px solid #8DFD1B;
+    transition: 0.5s;
+  }
+}
+.black-btn{
+  background: #8DFD1B;
+  border: 1px solid #8DFD1B;
+  @include text ($miseo400dm,16px,16px,black);
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 1s;
+  &:hover{
+    color: white;
+    background: black;
+    border: 1px solid #8DFD1B;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 820px) {
+  .header__left-list{
+    column-gap: 25px;
+  }
+  .header__nav{
+    align-items: center;
+  }
+  .header__left{
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .header__left-list{
+    column-gap: 29px;
+    white-space: nowrap;
+  }
+  .header__right{
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__left-list {
+    column-gap: 55px;
+  }
+  .header__nav{
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+}
+@media (max-width: 676px) {
+  .header__left-list{
+    column-gap: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .header__nav{
+    align-items: center;
+  }
+  .header__left{
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .header__left-list{
+    column-gap: 29px;
+    white-space: nowrap;
+  }
+  .header__right{
+    column-gap: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .header__left-list{
+    column-gap: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .white-btn{
+    padding: 10px;
+  }
+  .black-btn{
+    padding: 10px;
+  }
+  .header__left-list{
+    column-gap: 10px;
+  }
+}
+@media (max-width: 320px) {
+
+}
+
+

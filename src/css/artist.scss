@@ -1,0 +1,60 @@
+.artist{
+  padding: 127px 0 258px;
+  &__row{
+    display: flex;
+    gap: 80px 60px;
+    flex-wrap: wrap;
+  }
+  &__card{
+    width: calc(25% - 45px);
+
+    &-img{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &-name{
+      @include text($miseo400dm,16px,24px,white);
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1320px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 992px) {
+  .artist{
+    padding: 45px 0 100px;
+  }
+}
+@media (max-width: 786px) {
+  .artist__card{
+    width: calc(33.33333% - 45px);
+  }
+}
+@media (max-width: 676px) {
+
+}
+@media (max-width: 576px) {
+  .artist__card{
+    width: calc(50% - 45px);
+  }
+}
+@media (max-width: 425px) {
+}
+@media (max-width: 375px) {
+  .artist__row{
+    gap: 55px 60px;
+  }
+}
+@media (max-width: 320px) {
+
+}

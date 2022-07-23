@@ -1,0 +1,190 @@
+
+.tab {
+  background-color: #f1f1f1;
+  display: flex;
+  position: relative;
+  width: 20%;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background: #000000;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  width: 282px;
+  height: 72px;
+  @include text($miseo400dm,16px,16px,white)
+}
+.tab button:nth-child(2) {
+  background: #000000;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  width: 282px;
+  height: 72px;
+  @include text($miseo400dm,16px,16px,white)
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background: #222222;
+  transition: .5s;
+  color: #8DFD1B;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background: #222222;
+  transition: .5s;
+  color: #8DFD1B;
+}
+/* Style the tab content */
+.tabcontent {
+  display: block;
+  top: 0;
+  left: 282px;
+  background: #222222;
+  z-index: 11;
+  width: 875px;
+  height: 532px;
+  padding: 70px;
+  position: absolute;
+}
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.tab__open{
+  display: flex;
+  column-gap: 38px;
+}
+.tab__info-top{
+  display: flex;
+  align-items: center;
+  column-gap: 22px;
+  margin-bottom: 27px;
+}
+.tab__info-title{
+  @include text($miseo400dm,21px,32px,#8DFD1B);
+  font-weight: 200;
+}
+.tab__info-desc{
+  @include text($miseo400i,15px,26px,white);
+  margin-bottom: 18px ;
+}
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1320px) {
+
+}
+@media (max-width: 1200px) {
+  .tabcontent{
+    width: 700px;
+  }
+  .tab__open{
+    img{
+      display: none;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .tabcontent{
+    width: 670px;
+  }
+}
+@media (max-width: 992px) {
+  .tabcontent{
+    width: 470px;
+    padding: 50px 30px;
+  }
+}
+@media (max-width: 786px) {
+  .tab button{
+    width: 200px;
+  }
+  .tabcontent{
+    left: 200px;
+    width: 450px;
+  }
+}
+@media (max-width: 676px) {
+  .tab button {
+    width: 110px;
+    text-align: start;
+  }
+  .tabcontent {
+    left: 110px;
+    width: 440px;
+    padding: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .flex{
+    flex-direction: row;
+  }
+  .spring{
+    margin-top: 550px;
+  }
+  .tabcontent {
+    left: 0;
+    top: 70px;
+    width: 400px;
+  }
+  .tab button{
+    width: 150px;
+  }
+  .tab button:nth-child(2){
+    width: 100px;
+  }
+  .img-1{
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .tab button {
+    width: 123px;
+  }
+  .tab button:nth-child(2){
+    width: 100px;
+  }
+  .tabcontent {
+    width: 346px;
+    height: 550px;
+    display: block;
+  }
+  .spring{
+    margin-top: 580px;
+  }
+}
+@media (max-width: 375px) {
+  .tab button {
+    width: 95px;
+  }
+  .tabcontent {
+    width: 290px;
+    height: 720px;
+    display: block;
+  }
+  .spring{
+    margin-top: 750px;
+  }
+}
+@media (max-width: 320px) {
+
+}
+
+

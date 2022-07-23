@@ -1,0 +1,82 @@
+.meta{
+  padding: 81px 0;
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  &__img{
+    width: 60%;
+  }
+  &__info{
+    width: 40%;
+  }
+  &__title {
+    @include text($miseo400A, 51px, 61px, white);
+  }
+  &__desc{
+    @include text($miseo400i,16px,24px, white);
+    margin: 43px 0 115px;
+  }
+
+  &__btn{
+    @include text($miseo400dm,16px,16px, black);
+    background: #8DFD1B;
+    padding: 17px 40px;
+    cursor: pointer;
+    border: 1px solid #8DFD1B;
+    transition: 1s;
+    &:hover{
+      @include text($miseo400dm,16px,16px,white);
+      background: black;
+      transition: .5s;
+    }
+  }
+}
+.meta__img{
+  display: none;
+}
+@media (max-width: 992px) {
+  .swiper{
+    display: none;
+  }
+  .meta__img{
+    display: block;
+  }
+  .meta{
+    padding: 35px 0;
+  }
+
+}
+@media (max-width: 786px) {
+}
+
+@media (max-width: 676px) {
+  .meta__desc{
+    margin: 41px 0 72px;
+  }
+}
+
+@media (max-width: 576px) {
+  .meta__img{
+    display: none;
+  }
+  .meta__info{
+    width: 100%;
+  }
+  .meta{
+    padding: 20px 0 40px;
+  }
+  .meta__desc{
+   margin: 40px 0;
+  }
+}
+@media (max-width: 425px) {
+}
+@media (max-width: 375px) {
+}
+@media (max-width: 320px) {
+
+}
+

@@ -1,0 +1,109 @@
+.spring{
+  padding-bottom: 286px;
+  &__title{
+    @include text ($miseo400A,40px,45px,white);
+    text-align: center;
+    margin-bottom: 106px;
+    font-weight: 150;
+  }
+  &__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 140px;
+  }
+  &__card{
+    position: relative;
+
+    &-info{
+      display: flex;
+      column-gap: 87px;
+      align-items: center;
+      padding: 24px 13px 30px ;
+      &-desc{
+        @include text($miseo400i,12px,32px,white)
+      }
+    }
+    background: #222222;
+    border: 1px solid #8DFD1B;
+    &-top{
+      display: flex;
+      column-gap: 28px;
+      align-items: center;
+      border-bottom: 1px solid #8DFD1B;
+      padding: 13px ;
+      &-title{
+        @include text($miseo400dm,16px,28px,white);
+      }
+      &-subtitle{
+        @include text($miseo400dm,1px,8px,#8DFD1B)
+      }
+
+    }
+  }
+}
+.spring__card-info-text-top{
+  padding-left:35px ;
+}
+.spring__card-info-img{
+  height: 129px;
+}
+.first::before{
+  content: url("../img/before.png");
+  position: absolute;
+  top: -380px;
+  left: -425px;
+}
+.second::before{
+  content: url("../img/before.png");
+  position: absolute;
+  top: -295px;
+  right: -425px;
+}
+.third::before{
+  content: url("../img/before.png");
+  position: absolute;
+  left: -425px;
+  bottom: -287px;
+}
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1320px) {
+
+}
+@media (max-width: 1200px) {
+  .second::before{
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 786px) {
+}
+@media (max-width: 676px) {
+
+}
+
+@media (max-width: 576px) {
+
+
+}
+@media (max-width: 425px) {
+  .spring__card-info {
+    column-gap: 40px;
+    padding: 15px 13px 20px;
+  }
+}
+@media (max-width: 375px) {
+  .spring__card-info-img{
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+
+}
+

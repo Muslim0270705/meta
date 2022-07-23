@@ -1,0 +1,116 @@
+.asked{
+  padding-bottom: 108px;
+  &__img{
+    cursor: pointer;
+    position: absolute;
+    z-index: 15;
+  }
+  &__row{
+    display: flex;
+  }
+  &__left{
+    width: 50%;
+    &-title{
+      @include text ($miseo400A,38px,45px,white);
+      font-weight: 200;
+      margin-bottom: 51px;
+    }
+    &-subtitle{
+      @include text ($miseo400A,38px,45px,#A8A8A8);
+    }
+  }
+  &__accordion{
+    width: 50%;
+    &-info{
+      background: #222222;
+      padding: 26px 33px;
+      position: relative;
+      &-active{
+        .asked__accordion-info-desc{
+          display: block;
+        }
+        .asked__accordion-info-title{
+          @include text($miseo400dm,16px,24px,#8DFD1B);
+        }
+        .asked__accordion-info-click{
+          svg{
+            g{
+              path{
+                stroke: #8DFD1B;
+              }
+            }
+          }
+
+        }
+      }
+      &-title{
+        @include text($miseo400dm,16px,24px,white);
+        font-weight: 200;
+      }
+      &-desc{
+        @include text($miseo400i,12px,19px,#C4C4C4);
+        margin-top: 26px;
+        display:none;
+      }
+      &-click{
+        position: absolute;
+        top: 27px;
+        right: 21px;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1320px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 992px) {
+  .artist{
+    padding: 45px 0 100px;
+  }
+}
+@media (max-width: 786px) {
+  .asked__row {
+    flex-direction: column;
+    img{
+      display: none;
+    }
+  }
+  .asked__accordion-info{
+    width: 200%;
+  }
+}
+@media (max-width: 676px) {
+
+}
+
+@media (max-width: 576px) {
+  .artist__card{
+    width: calc(50% - 45px);
+  }
+
+}
+@media (max-width: 425px) {
+  .spring__card-info {
+    column-gap: 40px;
+    padding: 15px 13px 20px;
+  }
+}
+@media (max-width: 375px) {
+  .spring__card-info-img{
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+
+}

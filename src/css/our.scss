@@ -1,0 +1,17 @@
+.our{
+  padding-bottom: 247px;
+  &__subtitle{
+    @include text($miseo400dm,11px,12px,#8DFD1B);
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .our__row{
+    display: flex;
+    gap: 61px 150px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__title{
+    width: calc(33.33333% - 103.33333px);
+  }
+}

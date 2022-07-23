@@ -1,0 +1,127 @@
+.join{
+  padding-bottom:118px ;
+  &__row{
+    display: flex;
+    align-items: center;
+  }
+  &__info{
+    width: 50%;
+
+    &-title{
+      @include text($miseo400A,51px,61px,white);
+      font-weight: 200;
+    }
+    &-subtitle{
+      @include text($miseo400A,51px,61px,#8DFD1B);
+      font-weight: 200;
+    }
+    &-desc{
+      @include text($miseo400i,16px,26px,white);
+      margin: 35px 0;
+    }
+    &-btn{
+      display: flex;
+      padding: 14px 31px;
+      background: #8DFD1B;
+      cursor: pointer;
+      border: 1px solid black;
+      transition: 1s;
+
+      &:hover{
+        background: black;
+        border: 1px solid #8DFD1B;
+        transition: .5s;
+        .join__info-btn-link{
+          @include text($miseo400dm,16px,16px,white);
+          transition: .5s;
+          span{
+            svg{
+              path{
+                fill: white;
+                transition: .5s;
+              }
+            }
+          }
+        }
+      }
+      &-link{
+        @include text($miseo400dm,16px,16px,black);
+        display: flex;
+        align-items: center;
+        transition: 1s;
+        span{
+          svg{
+            path{
+              transition: 1s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1320px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 992px) {
+  .join__row{
+    img{
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .join__row{
+    img{
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 676px) {
+  .join__row{
+    img{
+      width: 230px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .join__row{
+    img{
+      display: none;
+    }
+  }
+  .join__info{
+    width: 100%;
+
+
+  }
+  .join__info-btn{
+    margin: 0 auto;
+  }
+}
+
+
+
+@media (max-width: 425px) {
+
+
+}
+
+@media (max-width: 375px) {
+}
+@media (max-width: 320px) {
+
+}

@@ -1,0 +1,125 @@
+.wave{
+  padding-bottom:113px ;
+  position: relative;
+  &__img{
+    cursor: pointer;
+    position: absolute;
+    z-index: 15;
+    top: 175px;
+  }
+  &__row{
+    display: flex;
+    column-gap: 161px;
+  }
+  &__left{
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    @include text($miseo400A, 38px, 45px, white);
+  }
+  &__subtitle{
+    @include text($miseo400A, 38px, 45px, #A8A8A8);
+    margin-bottom: 41px;
+  }
+  &__right {
+    &-row {
+      display: flex;
+      align-items: center;
+      column-gap: 22px;
+      margin-bottom:27px ;
+    }
+    &-title{
+      @include text($miseo400dm,21px,32px,#8DFD1B);
+      font-weight: 200;
+    }
+    &-desc{
+      @include text($miseo400i,15px,26px,white);
+      margin-bottom: 18px ;
+    }
+
+    &-btn{
+      margin-top:18px ;
+      padding: 10px 33px;
+      @include text($miseo400dm,16px,16px,black);
+      border: 1px solid black;
+      background: #8DFD1B;
+      cursor: pointer;
+      transition: 1s;
+      &:hover{
+        @include text($miseo400dm,16px,16px,white);
+        border: 1px solid #8DFD1B;
+        background: black;
+        transition: .5s;
+      }
+    }
+  }
+}
+.opacity{
+  animation: opacity;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes opacity {
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes opacity2 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .wave__row{
+    column-gap: 0;
+  }
+  .wave__right-row{
+    margin-bottom: 20px;
+  }
+  .wave__right-desc{
+   margin-bottom: 15px;
+  }
+  .wave__right-btn{
+    margin-top: 15px;
+  }
+  .wave{
+    padding-bottom: 70px ;
+  }
+}
+@media (max-width: 786px) {
+  .wave__row img{
+    display: none;
+  }
+  .wave__row{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 676px) {
+  .wave{
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+
+@media (max-width: 425px) {
+  .wave__subtitle{
+    margin-bottom: 20px;
+  }
+}
+}
+@media (max-width: 375px) {
+
+}
+@media (max-width: 320px) {
+
+}
